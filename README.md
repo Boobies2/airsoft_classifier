@@ -36,15 +36,15 @@ API для классификации страйкбольного снаряж�
 1. Клонировать репозиторий:
 
 ```bash
-git clone https://github.com/ваш_репозиторий/project.git
-cd project
+git clone https://github.com/Boobies2/airsoft_classifier
+cd airsoft_classifier
 ````
 
 2. Создать и активировать виртуальное окружение (рекомендуется):
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # Linux/MacOS
+source venv/bin/activate  # Linux
 venv\Scripts\activate     # Windows
 ```
 
@@ -77,7 +77,7 @@ uvicorn api_server:app --host 0.0.0.0 --port 8000 --reload
 
 ---
 
-## API
+## API(abc)
 
 ### Эндпоинт `/predict_batch`
 
