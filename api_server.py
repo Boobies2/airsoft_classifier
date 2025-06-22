@@ -14,6 +14,19 @@ import os
 API_KEY = "abc"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+def download_file(url: str, save_path: str):
+    if not os.path.exists(save_path):
+        print(f"Downloading {url} → {save_path}")
+        response = requests.get(url)
+        with open(save_path, "wb") as f:
+            f.write(response.content)
+        print("Download complete.")
+
+download_file(
+    "https://drive.google.com/file/d/1RiR5oNhiVa2vlGvxl6pCO5NBs-TPa-bn/view?usp=sharing",
+    "category_bert_model/model.safetensors"
+)
+
 text_model_path = "category_bert_model"
 text_model = BertForSequenceClassification.from_pretrained(text_model_path)
 text_tokenizer = BertTokenizer.from_pretrained(text_model_path)

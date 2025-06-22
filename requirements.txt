@@ -1,7 +1,8 @@
 fastapi
-uvicorn[standard]
-torch
+uvicorn
 transformers
+torch
+torchvision
+pillow
 scikit-learn
 requests
-pillow
