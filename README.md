@@ -1,6 +1,3 @@
-Конечно! Вот пример красивого, структурированного и информативного `README.md` для вашего проекта API классификации постов по тексту и фото с использованием FastAPI, BERT и ResNet18:
-
----
 
 ````markdown
 # Category & Subcategory Classifier API
